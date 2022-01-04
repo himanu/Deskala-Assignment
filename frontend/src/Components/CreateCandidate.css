@@ -1,0 +1,74 @@
+.editModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .expandEditModal {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0,0,0,0.65);
+  }
+  .modalContainer {
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .modalHeading {
+    color: rgba(0,0,0,.85);
+    font-size: 1rem;
+  }
+  .modalContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .modalContainerBody {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e8e8e8;
+    color: rgba(0,0,0,.85);
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-grow: 1;
+  }
+  .modalContainerBody > div {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .modalContainerFooter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .cancelBtn, .okBtn {
+    width: auto;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .okBtn {
+    background-color: #40a9ff;
+    color: #fff;
+  }
+  input {
+    padding: 0.5rem;
+  }
+  .label {
+      width: 80px;
+      overflow: hidden;
+  }
